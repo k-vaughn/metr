@@ -1,0 +1,147 @@
+	[
+		{
+		"id": "advocate",
+		"term": "Advocate",
+		"defn": "Includes safety, environmental, equity, and disability rights advocates"
+		},
+		{
+		"id": "authoritative_information",
+		"term": "Authoritative Information",
+		"defn": "trustworthy official notice(s) from a jurisdictional entity"
+		},
+		{
+		"id": "automated_driving_system",
+		"term": "Automated Driving System",
+		"defn": "TBD"
+		},
+		{
+		"id": "driver_support_system",
+		"term": "Driver Support System",
+		"defn": "TBD"
+		},
+		{
+		"id": "dynamic_driving_task",
+		"term": "Dynamic Driving Task",
+		"defn": "TBD"
+		},
+		{
+		"id": "dynamic_rule",
+		"term": "Dynamic Rule",
+		"defn": "TBD"
+		},
+		{
+		"id": "enforcement_personnel",
+		"term": "Enforcement Personnel",
+		"defn": "Includes law enforcement, lawyers, and insurance companies"
+		},
+		{
+		"id": "information_support_entity",
+		"term": "Information Support Entity",
+		"defn": "Includes map providers, navigation providers, and traveller information providers"
+		},
+		{
+		"id": "iso_tc_204",
+		"term": "ISO/TC204/WG19",
+		"defn": "The International Organization for Standardization (ISO) Technical Committee (TC) 204 develops standards for intelligent transport systems (ITS). Working Group (WG) 19 is tasked with developing standards for integrated mobility, which includes the cross-cutting work of providing transport regulations to user systems."
+		},
+		{
+		"id": "jurisdiction",
+		"term": "Jurisdiction",
+		"defn": "TBD"
+		},
+		{
+		"id": "kerbside_usage",
+		"term": "Kerbside Usage",
+		"defn": "TBD"
+		},
+		{
+		"id": "lane_usage",
+		"term": "Lane Usage",
+		"defn": "TBD"
+		},
+		{
+		"id": "maintenance_and_construction_personnel",
+		"term": "Maintenance and Construction Personnel",
+		"defn": "TBD"
+		},
+		{
+		"id": "manufacturers",
+		"term": "Manufacturers",
+		"defn": "Includes those for automated driving systems, driver assistive technologies, and delivery drones"
+		},
+		{
+		"id": "micromobility",
+		"term": "Micromobility",
+		"defn": "Transport using moderately low-speed (ISO 14812, 3.7.5.3), light-weight, limited sized vehicles"
+		},
+		{
+		"id": "nomadic_device",
+		"term": "Nomadic Device",
+		"defn": "TBD"
+		},
+		{
+		"id": "ridesharing",
+		"term": "Ridesharing",
+		"defn": "TBD"
+		},
+		{
+		"id": "roadwork",
+		"term": "Roadwork",
+		"defn": "TBD"
+		},
+		{
+		"id": "rule",
+		"term": "Rule",
+		"defn": "Regulation, advisory, or guidance"
+		},
+		{
+		"id": "standard",
+		"term": "Standard",
+		"defn": "These standards will be part of the ISO 24315 series, which currently has a working title of Management for Electronic Traffic Regulations (METR). Current efforts are focused on Part 1, which will establish the Operational Concept (ConOps) for the system. Future parts are expected to heavily leverage existing interface standards."
+		},
+		{
+		"id": "static_rule",
+		"term": "Static Rule",
+		"defn": "TBD"
+		},
+		{
+		"id": "technology_specialist",
+		"term": "Technology Specialist",
+		"defn": "Includes automated vehicle experts, location perception experts, and video image processing experts"
+		},
+		{
+		"id": "transport_entity_owner",
+		"term": "Transport Entity Owner",
+		"defn": "Includes municipalities, campus owners, and fleet managers"
+		},
+		{
+		"id": "transport_infrastructure_operator",
+		"term": "Transport Infrastructure Operator",
+		"defn": "Includes traffic engineers, toll road operators, and parking facility operators"
+		},
+		{
+		"id": "transport_service_operator",
+		"term": "Transport Service Operator",
+		"defn": "Includes public transport agencies, delivery companies, and ridesourcing companies"
+		},
+		{
+		"id": "transport_system",
+		"term": "Transport System",
+		"defn": "TBD"
+		},
+		{
+		"id": "transport_user",
+		"term": "Transport User",
+		"defn": "Includes vulnerable road users, micromobility users, and automobile operators"
+		},
+		{
+		"id": "trustworthy",
+		"term": "Trustworthy",
+		"defn": "TBD"
+		},
+		{
+		"id": "vulnerable_road_user",
+		"term": "Vulnerable Road User",
+		"defn": "TBD"
+		}
+	]
