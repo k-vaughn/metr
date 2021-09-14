@@ -63,7 +63,11 @@
 			}
 		</script>
 		<script>
-			$( document ).tooltip();
+			$( document ).tooltip({
+				content: function() {
+					return $(this).attr('title');
+				}
+			});
 		</script>
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
