@@ -208,7 +208,7 @@
 		"id": "transport_user",
 		"src": "cc", 
 		"term": "transport user",
-		"defn": "entity that has a transport need to be fulfiled <br>EXAMPLE: , vulnerable road user, automobile operator,"
+		"defn": "entity that has a transport need to be fulfiled <br>EXAMPLE: vulnerable road user, automobile operator"
 		},
 		{
 		"id": "transport_user_system",
