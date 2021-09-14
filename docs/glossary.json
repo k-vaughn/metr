@@ -28,7 +28,7 @@
 		"id": "condition_based",
 		"src": "cc", 
 		"term": "condition-based",
-		"defn": "being active based on explicitly stated conditions, such as \"when workers present\", other than time-based conditions"
+		"defn": "being active based on explicitly stated conditions <br> &quot;when workers present&quot;, other than time-based conditions"
 		},
 		{
 		"id": "C-ITS",
@@ -60,7 +60,7 @@
 		"id": "enforcement_personnel",
 		"src": "cc", 
 		"term": "enforcement personnel",
-		"defn": "person involved in the application of laws <br>EXAMPLE: law enforcement officer, lawyer, and insurance company representative"
+		"defn": "person involved in the application of laws <br>EXAMPLE: law enforcement officer, lawyer, insurance company representative"
 		},
 		{
 		"id": "information_support_personnel",
@@ -103,7 +103,7 @@
 		"id": "maintenance_and_construction_personnel",
 		"src": "cc", 
 		"term": "maintenance and construction personnel",
-		"defn": "person that performs or manages the maintenance and construction of transport infrastructure, including vehicle and equipment operators, field supervisory personnel, field crews, and work zone safety personnel"
+		"defn": "person that performs or manages the maintenance and construction of transport infrastructure <br>EXAMPLE: roadwork equipment operators, field supervisory personnel, field crew, work zone safety personnel"
 		},
 		{
 		"id": "manufacturers",
@@ -115,7 +115,7 @@
 		"id": "METR_standards",
 		"src": "cc", 
 		"term": "METR standards",
-		"defn": "These standards will be part of the ISO 24315 series, which currently has a working title of Management for Electronic Traffic Regulations (METR). Current efforts are focused on Part 1, which will establish the Operational Concept (ConOps) for the system. Future parts are expected to heavily leverage existing interface standards."
+		"defn": "These standards will be part of the ISO 24315 series, which currently has a working title of Management of Electronic Transport Regulations (METR). Current efforts are focused on Part 1, which will establish the Operational Concept (ConOps) for the system. Future parts are expected to heavily leverage existing interface standards."
 		},
 		{
 		"id": "micromobility",
@@ -184,7 +184,7 @@
 		"id": "technology_specialist",
 		"src": "cc", 
 		"term": "technology specialist",
-		"defn": "person that specializes in a particular technology related to modern transport systems <br>EXAMPLE: automated vehicle expert, location perception expert, and video image processing expert"
+		"defn": "person that specializes in a particular technology related to modern transport systems <br>EXAMPLE: automated vehicle expert, location perception expert, video image processing expert"
 		},
 		{
 		"id": "transport_entity_owner",
@@ -208,7 +208,7 @@
 		"id": "transport_user",
 		"src": "cc", 
 		"term": "transport user",
-		"defn": "entity that has a transport need to be fulfiled <br>EXAMPLE: vulnerable road user, automobile operator"
+		"defn": "entity that has a transport need to be fulfiled <br>EXAMPLE: vulnerable road user, automobile operator, sender of a package, recipient of a package"
 		},
 		{
 		"id": "transport_user_system",
