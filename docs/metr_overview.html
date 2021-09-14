@@ -13,8 +13,13 @@
 		<link href="jq/jquery-ui.css" rel="stylesheet">
 		<script src="external/jquery/jquery.js"></script>
 		<script src="jq/jquery-ui.js"></script>
+		<script src="glossary.js"></script>
 		<script>
-			$( document ).tooltip();
+			$( document ).tooltip({
+    content: function() {
+        return $(this).attr('title');
+    }
+});
 		</script>
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
@@ -56,13 +61,13 @@
 						<!-- Content -->
 							<div class="wrapper">
 								<div class="inner">
-									<p>While many previous efforts have focused on information delivery, METR focuses more on the pipeline to ensure that it can deliver rules of the road in a <em>trustworthy</em> manner. For example, while off-the-shelf navigation systems frequently will display a speed limit to the driver, the information displayed is only informative; the driver is still responsible for complying to the posted speed limit, even if the navigation system is inaccurate. Automated Driving Systems require more trustworthy information to complete their tasks.</p>
-									<p>Within its scope, METR will support both static rules, which can typically be accessed well in advance of the location, and dynamic rules, which field personnel or equipment might change an instant before reaching a particular location.</p> 
+									<p>While many previous efforts have focused on information delivery, METR focuses more on the pipeline to ensure that it can deliver <span  class="tooltip" term="rule">rules</span> of the road in a <span  class="tooltip">trustworthy</span> manner. For example, while off-the-shelf navigation systems frequently will display a speed limit to the driver, the information displayed is only informative; the driver is still responsible for complying to the posted speed limit, even if the navigation system is inaccurate. <span  class="tooltip" term="ADS">Automated Driving Systems</span> require more trustworthy information to complete their tasks.</p>
+									<p>Within its scope, METR will support both <span class="tooltip" term="static rule">static rules</span>, which can typically be accessed well in advance of the location, and <span class="tooltip" term="dynamic rule">dynamic rules</span>, which field personnel or equipment might change an instant before reaching a particular location.</p> 
 									
 									<div class="row gtr-uniform">
-										<div class="col-12"><span class="image fit"><img src="images/streetscape.png" alt="" /></span></div>
+										<div class="col-12"><span class="image fit"><img src="images/streetscape.jpg" alt="" /></span></div>
 									</div>									
-									<p>METR should be able to support virtually any rule that needs to be conveyed to virtually any user. For example, the graphic depicts rules for freight vehicles, ride sharing, kerbside usage, micromobility operations, vulnerable road users (VRUs), public transport usage, lane usage, and road works. This information and more needs to be conveyed to all transport user systems; sample user systems shown in the graphic include nomadic devices, sidewalk delivery robots, driver support systems, and ADS-equipped vehicles. </p>
+									<p>METR should be able to support virtually any <span class="tooltip">rule</span> that needs to be conveyed to virtually any <span class="tooltip">transport user</span>. For example, the graphic depicts rules for freight vehicles, ride sharing, kerbside usage, micromobility operations, vulnerable road users (VRUs), public transport usage, lane usage, and road works. This information and more needs to be conveyed to all transport user systems; sample user systems shown in the graphic include nomadic devices, sidewalk delivery robots, driver support systems, and ADS-equipped vehicles. </p>
 								</div>
 							</div>
 					</section>
@@ -70,8 +75,22 @@
 				<!-- Footer -->
 					<section id="footer">
 						<div class="inner">
-							<ul class="copyright">
-								<li><p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://iso-tc204.github.io/iso24315p1/">METR Github Website</a> is licensed under <a href="http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"></a></p></li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							<ul class="copyright" style="margin-bottom: 0px;">								<li><p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/">Website Content: <a href="http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"></a></p></li>
+								<li>Website Design: <a href="http://html5up.net">HTML5 UP</a></li>
+								<li>Terminology: <a href="glossary.html">See glossary</a></li>
+							</ul>
+							<ul class="copyright" style="padding-top: 0px; margin-top: 0px; border-top: none;">
+								<li>Images:</li><br>
+								<li><a href="https://at.govt.nz/media/1973835/nelson-street-phase-2-street-design.jpg">New Zealand Government</a></li>
+								<li><a href="https://www.microsoft.com/en-us/microsoft-365">Microsoft Office</a></li>
+								<li><a href="https://cdn.pixabay.com/">Pixabay.com</a></li>
+								<li><a href="https://s0.geograph.org.uk/geophotos/01/88/57/1885754_b95c7673.jpg">Geograph.uk.org</a></li>
+								<li><a href="https://mutcd.fhwa.dot.gov/pdfs/2009r1r2/mutcd2009r1r2edition.pdf">FHWA</a></li>
+								<li><a href="https://pngimg.com/uploads/truck/truck_PNG16273.png">PNGImg.com</a></li>
+								<li><a href="https://upload.wikimedia.org/wikipedia/commons/4/45/Yellow_Taxi_Ford_Crown_Victoria_(rear).jpg">Wikimedia</a></li>
+								<li><a href="https://i2.wp.com/clipset.20minutos.es/wp-content/uploads/2016/06/Segway-miniPRO-mujer-640x480.jpg?resize=640%2C480">Wordpress</a></li>
+								<li><a href="https://grendz.com/wp-content/uploads/2017/07/zmp-15015021768n4kg.jpg">Grendz</a></li>
+								<li><a href="https://static.vecteezy.com/system/resources/previews/000/112/951/original/ford-fiesta-front-rear-view-vector.jpg">Vecteezy</a></li>
 							</ul>
 						</div>
 					</section>

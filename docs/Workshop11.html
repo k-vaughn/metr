@@ -1,66 +1,103 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
+<!--
+	Solid State by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
 <html>
-<head>
-<title>Questions for METR Workshop 11: METR Deployment Part I</title>
-<style>
-.tooltip {
-  position: relative;
-  display: inline-block;
-  border-bottom: 1px dotted black;
-}
+	<head>
+		<title>METR - Workshop 11</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link href="jq/jquery-ui.css" rel="stylesheet">
+		<script src="external/jquery/jquery.js"></script>
+		<script src="jq/jquery-ui.js"></script>
+		<script src="glossary.js"></script>
+		<script>
+			$( document ).tooltip();
+		</script>
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
 
-.tooltip .tooltiptext {
-  visibility: hidden;
-  width: 300px;
-  background-color: #555;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px 0;
-  position: absolute;
-  z-index: 1;
-  top: -200%;
-  left: 130%;
-  margin-left: -60px;
-  opacity: 0;
-  transition: opacity 0.3s;
-}
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
 
-.tooltip .tooltiptext::after {
-  content: " ";
-  position: absolute;
-  top: 50%;
-  right: 100%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: transparent #555 transparent transparent;
-}
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index.html">METR</a></h1>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
 
-.tooltip:hover .tooltiptext {
-  visibility: visible;
-  opacity: 1;
-}
-</style>
-</head>
-<body>
-	<h1>Questions for METR Workshop 11: METR Deployment Part I</h1>
-	<p>The eleventh METR workshop will include focus on the following questions:</p>
-	<ul>
-		<li>What prerequisites should be met for METR participation?</li>
-		<li>What events might trigger the revocation of authorization to serve as a METR-affiliated regulator, collector, disseminator, or user (e.g., field reporter)?</li>
-		<li>Should we define standardized conformance or maturity capabilities for METR-systems?</li>
-		<li>What features of METR need to be implemented by a system to claim basic METR conformance?</li>
-		<li>Is there a need to indicate the multiple regulators that might exist within a single jurisdictional entity?</li>
-		<li>How should user systems (e.g., <div class="tooltip">ADS-equipped (i.e., automated) vehicles<span class="tooltiptext">An ADS-equipped vehicle is equipped with a driving automation system that is able to perform the entire dynamic driving task (DDT) on a sustained basis.</span></div>, driver assistance systems) respond in the absence of real-time METR data for the user's current location?</li>
-		<li>What complications arise if only a subset of vehicles have real-time data?</li>
-		<li>Is there a greater need for METR availability in areas that support dynamic regulations?</li>
-		<li>To what extent and for what purpose(s) is there a need to track the performance of each METR component?</li>
-		<li>To what extent and for what purpose(s) is there a need to monitor the accuracy of the electronic regulations?</li>
-		<li>To what extent is there a need to support non-repudiation (e.g., to support auditing, insurance claims)?</li>
-		<li>What management and control features does METR need to support?</li>
-		<li>Who might be responsible for maintaining the operation of the METR subsystems?</li>
-		<li>How is each entity funded?</li>
-	</ul>
-</body>
+				<!-- Menu -->
+					<nav id="menu">
+						<div class="inner">
+							<h2>Menu</h2>
+							<ul class="links">
+								<li><a href="index.html">Home</a></li>
+								<li><a href="metr_overview.html">Overview</a></li>
+								<li><a href="workshop_overview">Workshops</a></li>
+								<li><a href="glossary.html">Glossary</a></li>
+							</ul>
+							<a href="#" class="close">Close</a>
+						</div>
+					</nav>
+				<!-- Wrapper -->
+					<section id="wrapper">
+						<header>
+							<div class="inner">
+								<h2>METR - Workshop 11</h2>
+								<p>METR Deployment Part I</p>
+							</div>
+						</header>
+
+						<!-- Content -->
+							<div class="wrapper">
+								<div class="inner">
+									<h3 class="major">Questions for METR Workshop 11: METR Deployment Part I</h3>
+									<p>The eleventh METR workshop will include focus on the following questions:</p>
+									<ul>
+										<li>What prerequisites should be met for METR participation?</li>
+										<li>What events might trigger the revocation of authorization to serve as a METR-affiliated regulator, collector, disseminator, or user (e.g., field reporter)?</li>
+										<li>Should we define standardized conformance or maturity capabilities for METR-systems?</li>
+										<li>What features of METR need to be implemented by a system to claim basic METR conformance?</li>
+										<li>Is there a need to indicate the multiple regulators that might exist within a single jurisdictional entity?</li>
+										<li>How should <span class="tooltip" term="transport user system">user systems</span> (e.g., <span class="tooltip">ADS</span>-equipped vehicles, <span class="tooltip" term="driver support system">driver support systems</span>) respond in the absence of real-time METR data for the user's current location?</li>
+										<li>What complications arise if only a subset of vehicles have real-time data?</li>
+										<li>Is there a greater need for METR availability in areas that support <span class="tooltip" term="dynamic rule">dynamic rules</span>?</li>
+										<li>To what extent and for what purpose(s) is there a need to track the performance of each METR component?</li>
+										<li>To what extent and for what purpose(s) is there a need to monitor the accuracy of the electronic rules being distributed?</li>
+										<li>To what extent is there a need to support non-repudiation (e.g., to support auditing, insurance claims)?</li>
+										<li>What management and control features does METR need to support?</li>
+										<li>Who might be responsible for maintaining the operation of the METR subsystems?</li>
+										<li>How is each entity funded?</li>
+									</ul>
+								</div>
+							</div>
+					</section>
+
+				<!-- Footer -->
+					<section id="footer">
+						<div class="inner">
+							<ul class="copyright">
+								<li><p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/">Website Content: <a href="http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"></a></p></li>
+								<li>Website Design: <a href="http://html5up.net">HTML5 UP</a></li>
+								<li>Terminology: <a href="glossary.html">See glossary</a></li>
+							</ul>
+						</div>
+					</section>
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
 </html>

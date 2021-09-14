@@ -9,11 +9,11 @@ function populateData(data) {
 		for (var j = 0; j < els.length; j++) {
 			var field = els[j];
 			var t = field.innerHTML;
-			var term = field.getAttribute("term")
-			if (!term) {
+			var term = field.getAttribute("term");
+			if ((term == null) || (term == "")) {
 				term = t;
 			}
-			if (term == entry.id) {
+			if (term.toLowerCase() == entry.term.toLowerCase()) {
 				field.innerHTML = '<a href="glossary.html#' + entry.id + '" title="' + entry.defn + '">' + t + '</a>';
 			}
 		}

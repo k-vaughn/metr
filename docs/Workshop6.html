@@ -1,61 +1,97 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
+<!--
+	Solid State by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
 <html>
-<head>
-<title>Questions for METR Workshop 6: Vehicle Information Needs</title>
-<style>
-.tooltip {
-  position: relative;
-  display: inline-block;
-  border-bottom: 1px dotted black;
-}
+	<head>
+		<title>METR - Workshop 6</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link href="jq/jquery-ui.css" rel="stylesheet">
+		<script src="external/jquery/jquery.js"></script>
+		<script src="jq/jquery-ui.js"></script>
+		<script src="glossary.js"></script>
+		<script>
+			$( document ).tooltip();
+		</script>
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
 
-.tooltip .tooltiptext {
-  visibility: hidden;
-  width: 300px;
-  background-color: #555;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px 0;
-  position: absolute;
-  z-index: 1;
-  top: -200%;
-  left: 130%;
-  margin-left: -60px;
-  opacity: 0;
-  transition: opacity 0.3s;
-}
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
 
-.tooltip .tooltiptext::after {
-  content: " ";
-  position: absolute;
-  top: 50%;
-  right: 100%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: transparent #555 transparent transparent;
-}
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index.html">METR</a></h1>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
 
-.tooltip:hover .tooltiptext {
-  visibility: visible;
-  opacity: 1;
-}
-</style>
+				<!-- Menu -->
+					<nav id="menu">
+						<div class="inner">
+							<h2>Menu</h2>
+							<ul class="links">
+								<li><a href="index.html">Home</a></li>
+								<li><a href="metr_overview.html">Overview</a></li>
+								<li><a href="workshop_overview">Workshops</a></li>
+								<li><a href="glossary.html">Glossary</a></li>
+							</ul>
+							<a href="#" class="close">Close</a>
+						</div>
+					</nav>
+				<!-- Wrapper -->
+					<section id="wrapper">
+						<header>
+							<div class="inner">
+								<h2>METR - Workshop 6</h2>
+								<p>Vehicle Information Needs</p>
+							</div>
+						</header>
 
-</head>
-<body>
-	<h1>Questions for METR Workshop 6: Vehicle Information Needs</h1>
-	<p>The sixth METR workshop will include focus on the following questions:</p>
-	<ul>
-		<li>What data does a vehicle need from METR to properly handle a static ODD boundary?</li>
-		<li>What is the operational scenario associated with a vehicle approaching a static <div class="tooltip">operational design domain (ODD)<span class="tooltiptext">An ODD defines the set of operating conditions under which a given driving automation system or feature thereof is specifically designed to function</span></div> boundary that limits the vehicle’s operation? </li>
-		<li>What additional information needs to be conveyed by METR to enable a vehicle to properly handle a dynamic ODD boundary?</li>
-		<li>What is the operational scenario associated with a vehicle encountering a dynamic ODD boundary that limits the vehicle’s operation?</li>
-		<li>How should a METR (esp. an automated) vehicle behave in a region with only partial METR support, should this be a part of the ODD definition?</li>
-		<li>To what extent does METR need to provide warnings, especially to automated vehicles, that you are approaching an area without METR coverage or with a lower level of conformance? Does METR need to identify adjacent jurisdictions/METR download zones?</li>
-		<li>While the goal is clearly to avoid conflicts within METR, what should a user (or user system) do when encountering conflicting METR regulations (e.g., from different levels of jurisdictions)?</li>
-		<li>What, if any, attributes (e.g., priority information) need to be conveyed by METR so that users can appropriately process potentially conflicting regulations from different layers of jurisdictions?</li>
+						<!-- Content -->
+							<div class="wrapper">
+								<div class="inner">
+									<h3 class="major">Questions for METR Workshop 6: Vehicle Information Needs</h3>
+									<p>The sixth METR workshop will include focus on the following questions:</p>
+									<ul>
+										<li>What data does a vehicle need from METR to properly handle a static <span class="tooltip" term="operational design domain">operational design domain (ODD)</span> boundary (e.g., an exit from the motorway)?</li>
+										<li>What is the operational scenario associated with a vehicle approaching a static ODD boundary that limits the vehicle’s operation? </li>
+										<li>What additional information needs to be conveyed by METR to enable a vehicle to properly handle a dynamic ODD boundary (e.g., an area experiencing snow)?</li>
+										<li>What is the operational scenario associated with a vehicle encountering a dynamic ODD boundary that limits the vehicle’s operation?</li>
+										<li>How should a METR (esp. an automated) vehicle behave in a region with only partial METR support, should this be a part of the ODD definition?</li>
+										<li>To what extent does METR need to provide warnings, especially to automated vehicles, that you are approaching an area without METR coverage or with a lower level of conformance? Does METR need to identify adjacent <span class="tooltip" term="jurisdictional area">jurisdictional areas</span>/METR download zones?</li>
+										<li>While the goal is clearly to avoid conflicts within METR, what should a <span class="tooltip" term="transport user">user</span> (or <span class="tooltip" term="transport user system">user system</span>) do when encountering conflicting METR regulations (e.g., from different levels of jurisdictions)?</li>
+										<li>What, if any, attributes (e.g., priority information) need to be conveyed by METR so that users and/or user systems can appropriately process potentially conflicting rules from different layers of <span class="tooltip" term="jurisdictional entity">jurisdictional entities</span>?</li>
 	</ul>
-</body>
+								</div>
+							</div>
+					</section>
+
+				<!-- Footer -->
+					<section id="footer">
+						<div class="inner">
+							<ul class="copyright">
+								<li><p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/">Website Content: <a href="http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"></a></p></li>
+								<li>Website Design: <a href="http://html5up.net">HTML5 UP</a></li>
+								<li>Terminology: <a href="glossary.html">See glossary</a></li>
+							</ul>
+						</div>
+					</section>
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
 </html>

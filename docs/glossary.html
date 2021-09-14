@@ -14,6 +14,55 @@
 		<script src="external/jquery/jquery.js"></script>
 		<script src="jq/jquery-ui.js"></script>
 		<script>
+			fetch('glossary.json')
+				.then(response => response.json())
+				.then(result => populateData(result))
+
+			function populateData(data) {
+				var table = document.createElement("table"), row, term, source, defn;
+				document.getElementById("glossary").appendChild(table);
+				
+				row = document.createElement("tr");				term = document.createElement("th");
+				source = document.createElement("th");
+				source.setAttribute("width", "150em")
+				defn = document.createElement("th");
+						
+				term.innerHTML = "Term";
+				source.innerHTML = "Source";
+				defn.innerHTML = "Definition";
+					
+		        table.appendChild(row);
+				row.appendChild(term);
+				row.appendChild(source);
+				row.appendChild(defn);
+
+				for (var i = 0; i < data.length; i++) {
+					var entry = data[i];
+					row = document.createElement("tr");					term = document.createElement("td");
+					source = document.createElement("td");
+					defn = document.createElement("td");
+						
+					term.innerHTML = '<b>' + entry.term + '</b>';
+					term.setAttribute("id", entry.id);
+					if (entry.src == "cc") {
+						source.innerHTML = '<a href="http://creativecommons.org/publicdomain/zero/1.0?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC0 1.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/zero.svg?ref=chooser-v1"></a>';
+					} else {
+						source.innerHTML = entry.src;
+					}
+					if (entry.alt) {
+						defn.innerHTML = '<b>' + entry.alt + '</b><br>' + entry.defn;
+					} else {
+						defn.innerHTML = entry.defn;
+					}
+					
+			        table.appendChild(row);
+					row.appendChild(term);
+					row.appendChild(source);
+					row.appendChild(defn);
+				}
+			}
+		</script>
+		<script>
 			$( document ).tooltip();
 		</script>
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
@@ -57,24 +106,8 @@
 						<!-- Content -->
 							<div class="wrapper">
 								<div class="inner">
-
 									<h3 class="major">Terms</h3>
-									<table>
-										<thead>
-											<tr>
-												<th>Term</th>
-												<th>Definition</th>
-												</tr>
-										</thead>
-										<tr>
-											<td id="tc204">ISO/TC 204/WG 19</td>
-											<td>The International Organization for Standardization (ISO) Technical Committee (TC) 204 develops standards for intelligent transport systems (ITS). Working Group (WG) 19 is tasked with developing standards for integrated mobility, which includes the cross-cutting work of providing transport regulations to user systems.</td>
-										</tr>
-										<tr>
-											<td id="METRstandards">METR standards</td>
-											<td>These standards will be part of the ISO 24315 series, which currently has a working title of Management for Electronic Traffic Regulations (METR). Current efforts are focused on Part 1, which will establish the Operational Concept (ConOps) for the system. Future parts are expected to heavily leverage existing interface standards.</td>
-										</tr>
-									</table>
+									<div id="glossary"></div>
 								</div>
 							</div>
 					</section>
